@@ -9,3 +9,12 @@ every 20 ticks do
     input fluid:: from sink
     output fluid:: to phyto
 end
+
+every 20 ticks do
+    input inferium_seeds from seed_chest
+    output 4 retain 4 inferium_seeds to each inferium
+    forget
+    input from inferium slots 2-4
+    output inferium_seeds to seed_chest
+    output inferium_essence to essence_chest
+end
