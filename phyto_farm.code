@@ -1,7 +1,7 @@
 name "phyto_farm"
 
 every 1 ticks do
-    input fe:: from quantum
+    input fe:: from quantum top side
     output fe:: to phyto
 end
 
@@ -11,10 +11,10 @@ every 20 ticks do
 end
 
 every 20 ticks do
-    input inferium_seeds from seed_chest
+    input inferium_seeds from seed_controller
     output 4 retain 4 inferium_seeds to each inferium
     forget
     input from inferium slots 2-4
-    output inferium_seeds to seed_chest
-    output inferium_essence to essence_chest
+    output inferium_seeds to seed_controller
+    output inferium_essence to essence_controller
 end
