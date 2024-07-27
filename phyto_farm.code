@@ -1,0 +1,11 @@
+name "phyto_farm"
+
+every 1 ticks do
+    input fe:: from quantum
+    output fe:: to phyto
+end
+
+every 20 ticks do
+    input fluid:: from sink
+    output fluid:: to phyto
+end
