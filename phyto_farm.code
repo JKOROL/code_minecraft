@@ -3,18 +3,20 @@ name "phyto_farm"
 every 1 ticks do
     input fe:: from quantum top side
     output fe:: to phyto
+    output fe:: to miniPhyto
 end
 
 every 20 ticks do
     input fluid:: from sink
     output fluid:: to phyto
+    output fluid:: to miniPhyto
 end
 
 every 20 ticks do
-    input inferium_seeds from seed_controller
-    output 4 retain 4 inferium_seeds to each inferium
+    input *seeds from seed_controller
+    output 4 retain 4 *seeds to each phyto
     forget
-    input from inferium slots 2-4
-    output inferium_seeds to seed_controller
-    output inferium_essence to essence_controller
+    input from phyto slots 2-5
+    output *seeds to seed_controller
+    output *essence to essence_controller
 end

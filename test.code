@@ -1,0 +1,52 @@
+name "phyto_test"
+
+every 1 ticks do
+    input fe:: from quantum top side
+    output fe:: to groPhyto
+    output fe:: to groCraft
+end
+
+every 20 ticks do
+    input fluid:: from sink
+    output fluid:: to groPhyto
+end
+
+every 20 ticks do
+    input *seeds from groChest
+    output 4 retain 4 *seeds to each groPhyto
+    forget
+    input from groPhyto slots 2-5
+    output *seeds to groChest
+    output *essence to groDrawer
+end
+
+every 50 ticks do
+    if groCraft slots 10-35 has le 64 sand then
+        input from groDrawer
+        if groCraft slots 10-35 has le 31 fire_essence then
+            output 32 fire_essence to groCraft
+        end
+        if groCraft slots 10-35 has le 31 dirt_essence then
+            output 32 dirt_essence to groCraft
+        end
+    end
+end
+
+every 20 ticks do
+    if groCraft slots 10-35 has le 64 *potassium* then
+        input from groDrawer
+        output 30 saltpeter_essence to groCraft
+    end
+end
+
+every 20 ticks do
+    if groCraft slots 10-35 has le 64 apatite then
+        input from groDrawer
+        output 64 apatite_essence to groCraft
+    end
+end
+
+every 20 ticks do
+    input from groCraft slots 36-39
+    output 1 *phyto* to each phyto slots 1
+end
