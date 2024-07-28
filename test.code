@@ -20,7 +20,7 @@ every 20 ticks do
     output *essence to groDrawer
 end
 
-every 50 ticks do
+every 100 ticks do
     if groCraft slots 10-35 has le 64 sand then
         input from groDrawer
         if groCraft slots 10-35 has le 31 fire_essence then
@@ -32,14 +32,14 @@ every 50 ticks do
     end
 end
 
-every 20 ticks do
-    if groCraft slots 10-35 has le 64 *potassium* then
+every 100 ticks do
+    if groCraft slots 10-35 has le 64 potassium_nitrate_dust then
         input from groDrawer
         output 30 saltpeter_essence to groCraft
     end
 end
 
-every 20 ticks do
+every 100 ticks do
     if groCraft slots 10-35 has le 64 apatite then
         input from groDrawer
         output 64 apatite_essence to groCraft
@@ -48,5 +48,5 @@ end
 
 every 20 ticks do
     input from groCraft slots 36-39
-    output 1 *phyto* to each phyto slots 1
+    output 4 *phyto* to each phyto slots 1
 end
