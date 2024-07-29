@@ -3,13 +3,11 @@ name "phyto_farm"
 every 1 ticks do
     input fe:: from quantum top side
     output fe:: to phyto
-    output fe:: to miniPhyto
 end
 
 every 20 ticks do
     input fluid:: from sink
     output fluid:: to phyto
-    output fluid:: to miniPhyto
 end
 
 every 20 ticks do
