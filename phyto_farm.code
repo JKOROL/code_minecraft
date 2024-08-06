@@ -3,6 +3,7 @@ name "phyto_farm"
 every 1 ticks do
     input fe:: from quantum top side
     output fe:: to phyto
+    output fe:: to crafter
 end
 
 every 20 ticks do
@@ -12,9 +13,10 @@ end
 
 every 20 ticks do
     input *seeds from seed_controller
-    output 4 retain 4 *seeds to each phyto
+    output *seeds to each phyto
     forget
     input from phyto slots 2-5
     output *seeds to seed_controller
     output *essence to essence_controller
+    output wheat to essence_controller
 end
