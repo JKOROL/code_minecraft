@@ -1,0 +1,467 @@
+name "craft_factory"
+
+every 1 ticks do
+    input fe:: from quantum top side
+    output fe:: to crafter
+end
+
+every 20 ticks do
+    input from crafter
+    output to new_controller
+end
+
+
+every 20 ticks do
+    input iron_essence from essence_controller
+    output iron_essence to iron_crafter
+end
+
+every 20 ticks do
+    input gold_essence from essence_controller
+    output gold_essence to gold_crafter
+end
+
+every 20 ticks do
+    input diamond_essence from essence_controller
+    output diamond_essence to diamond_crafter
+end
+
+every 20 ticks do
+    input blaze_essence from essence_controller
+    output blaze_essence to blaze_crafter
+end
+
+every 20 ticks do
+    input wood_essence from essence_controller
+    output wood_essence to wood_crafter
+end
+
+every 20 ticks do
+    input redstone_essence from essence_controller
+    output redstone_essence to redstone_crafter
+end
+
+every 20 ticks do
+    input electrum_essence from essence_controller
+    output electrum_essence to electrum_crafter
+end
+
+every 20 ticks do
+    input oak_log from new_controller
+    output oak_log to plank_crafter
+end
+
+every 20 ticks do
+    input copper_essence from essence_controller
+    output copper_essence to copper_crafter
+end
+
+every 20 ticks do
+    input silver_essence from essence_controller
+    output silver_essence to silver_crafter
+end
+
+every 20 ticks do
+    input nickel_essence from essence_controller
+    output nickel_essence to nickel_crafter
+end
+
+every 20 ticks do
+    input invar_essence from essence_controller
+    output invar_essence to invar_crafter
+end
+
+every 20 ticks do
+    input tin_essence from essence_controller
+    output tin_essence to tin_crafter
+end
+
+every 20 ticks do
+    input obsidian_essence from essence_controller
+    output obsidian_essence to obsidian_crafter
+end
+
+every 20 ticks do
+    input skeleton_essence from essence_controller
+    output skeleton_essence to skeleton_crafter
+end
+
+every 20 ticks do
+    input lumium_essence from essence_controller
+    output lumium_essence to lumium_crafter
+end
+
+every 20 ticks do
+    input netherite_essence from essence_controller
+    output netherite_essence to netherite_crafter
+end
+
+every 20 ticks do
+    input osmium_essence from essence_controller
+    output osmium_essence to osmium_crafter
+end
+
+every 20 ticks do
+    input refined_obsidian_essence from essence_controller
+    output refined_obsidian_essence to refined_obsidian_crafter
+end
+
+every 20 ticks do
+    input signalum_essence from essence_controller
+    output signalum_essence to signalum_crafter
+end
+
+every 20 ticks do
+    input steel_essence from essence_controller
+    output steel_essence to steel_crafter
+end
+
+every 20 ticks do
+    input compressed_iron_essence from essence_controller
+    output compressed_iron_essence to compressed_iron_crafter
+end
+
+every 20 ticks do
+    input constantan_essence from essence_controller
+    output constantan_essence to constantan_crafter
+end
+
+every 20 ticks do
+    input apatite_essence from essence_controller
+    output apatite_essence to apatite_crafter
+end
+
+every 20 ticks do
+    input coal_essence from essence_controller
+    output coal_essence to coal_crafter
+end
+
+every 20 ticks do
+    input nether_quartz_essence from essence_controller
+    output nether_quartz_essence to nether_quartz_crafter
+end
+
+every 20 ticks do
+    input soulium_essence from essence_controller
+    output soulium_essence to soulium_crafter
+end
+
+every 20 ticks do
+    input deepslate_essence from essence_controller
+    output deepslate_essence to deepslate_crafter
+end
+
+every 20 ticks do
+    input emerald_essence from essence_controller
+    output emerald_essence to emerald_crafter
+end
+
+every 20 ticks do
+    input enderman_essence from essence_controller
+    output enderman_essence to enderman_crafter
+end
+
+every 20 ticks do
+    input glowstone_essence from essence_controller
+    output glowstone_essence to glowstone_crafter
+end
+
+every 20 ticks do
+    input lead_essence from essence_controller
+    output lead_essence to lead_crafter
+end
+
+every 20 ticks do
+    input aluminum_essence from essence_controller
+    output aluminum_essence to aluminum_crafter
+end
+
+every 20 ticks do
+    input amethyst_essence from essence_controller
+    output amethyst_essence to amethyst_crafter
+end
+
+every 20 ticks do
+    input creeper_essence from essence_controller
+    output creeper_essence to creeper_crafter
+end
+
+every 20 ticks do
+    input enderium_essence from essence_controller
+    output enderium_essence to enderium_crafter
+end
+
+every 20 ticks do
+    input grains_of_infinity_essence from essence_controller
+    output grains_of_infinity_essence to grains_of_infinity_crafter
+end
+
+every 20 ticks do
+    input slime_essence from essence_controller
+    output slime_essence to slime_crafter
+end
+
+every 20 ticks do
+    input sulfur_essence from essence_controller
+    output sulfur_essence to sulfur_crafter
+end
+
+every 20 ticks do
+    input zinc_essence from essence_controller
+    output zinc_essence to zinc_crafter
+end
+
+every 20 ticks do
+    input bronze_essence from essence_controller
+    output bronze_essence to bronze_crafter
+end
+
+every 20 ticks do
+    input certus_quartz_essence from essence_controller
+    output certus_quartz_essence to certus_quartz_crafter
+end
+
+every 20 ticks do
+    input copper_alloy_essence from essence_controller
+    output copper_alloy_essence to copper_alloy_crafter
+end
+
+every 20 ticks do
+    input draconium_essence from essence_controller
+    output draconium_essence to draconium_crafter
+end
+
+every 20 ticks do
+    input dragon_egg_essence from essence_controller
+    output dragon_egg_essence to dragon_egg_crafter
+end
+
+every 20 ticks do
+    input fluorite_essence from essence_controller
+    output fluorite_essence to fluorite_crafter
+end
+
+every 20 ticks do
+    input *infused_ingot_essence from essence_controller
+    output *infused_ingot_essence to infused_ingot_crafter
+end
+
+every 20 ticks do
+    input ghast_essence from essence_controller
+    output ghast_essence to ghast_crafter
+end
+
+every 20 ticks do
+    input lapis_lazuli_essence from essence_controller
+    output lapis_lazuli_essence to lapis_lazuli_crafter
+end
+
+every 20 ticks do
+    input manasteel_essence from essence_controller
+    output manasteel_essence to manasteel_crafter
+end
+
+every 20 ticks do
+    input quartz_enriched_iron_essence from essence_controller
+    output quartz_enriched_iron_essence to quartz_enriched_iron_crafter
+end
+
+every 20 ticks do
+    input redstone_alloy_essence from essence_controller
+    output redstone_alloy_essence to redstone_alloy_crafter
+end
+
+every 20 ticks do
+    input refined_glowstone_essence from essence_controller
+    output refined_glowstone_essence to refined_glowstone_crafter
+end
+
+every 20 ticks do
+    input sky_stone_essence from essence_controller
+    output sky_stone_essence to sky_stone_crafter
+end
+
+every 20 ticks do
+    input zombie_essence from essence_controller
+    output zombie_essence to zombie_crafter
+end
+
+every 20 ticks do
+    input niotic_crystal_essence from essence_controller
+    output niotic_crystal_essence to niotic_crystal_crafter
+end
+
+every 20 ticks do
+    input spirited_crystal_essence from essence_controller
+    output spirited_crystal_essence to spirited_crystal_crafter
+end
+
+every 20 ticks do
+    input nether_star_essence from essence_controller
+    output nether_star_essence to nether_star_crafter
+end
+
+every 20 ticks do
+    input soularium_essence from essence_controller
+    output soularium_essence to soularium_crafter
+end
+
+every 20 ticks do
+    input blazing_crystal_essence from essence_controller
+    output blazing_crystal_essence to blazing_crystal_crafter
+end
+
+every 20 ticks do
+    input crimson_iron_essence from essence_controller
+    output crimson_iron_essence to crimson_iron_crafter
+end
+
+every 20 ticks do
+    input conductive_alloy_essence from essence_controller
+    output conductive_alloy_essence to conductive_alloy_crafter
+end
+
+every 20 ticks do
+    input uranium_essence from essence_controller
+    output uranium_essence to uranium_crafter
+end
+
+every 20 ticks do
+    input azure_silver_essence from essence_controller
+    output azure_silver_essence to azure_silver_crafter
+end
+
+every 20 ticks do
+    input blizz_essence from essence_controller
+    output blizz_essence to blizz_crafter
+end
+
+every 20 ticks do
+    input uraninite_essence from essence_controller
+    output uraninite_essence to uraninite_crafter
+end
+
+every 20 ticks do
+    input energized_steel_essence from essence_controller
+    output energized_steel_essence to energized_steel_crafter
+end
+
+every 20 ticks do
+    input brass_essence from essence_controller
+    output brass_essence to brass_crafter
+end
+
+every 20 ticks do
+    input allthemodium_essence from essence_controller
+    output allthemodium_essence to allthemodium_crafter
+end
+
+every 20 ticks do
+    input awakened_draconium_essence from essence_controller
+    output awakened_draconium_essence to awakened_draconium_crafter
+end
+
+every 20 ticks do
+    input vibrant_alloy_essence from essence_controller
+    output vibrant_alloy_essence to vibrant_alloy_crafter
+end
+
+every 20 ticks do
+    input dark_steel_essence from essence_controller
+    output dark_steel_essence to dark_steel_crafter
+end
+
+every 20 ticks do
+    input elementium_essence from essence_controller
+    output elementium_essence to elementium_crafter
+end
+
+every 20 ticks do
+    input end_steel_essence from essence_controller
+    output end_steel_essence to end_steel_crafter
+end
+
+every 20 ticks do
+    input energetic_alloy_essence from essence_controller
+    output energetic_alloy_essence to energetic_alloy_crafter
+end
+
+every 20 ticks do
+    input fluix_essence from essence_controller
+    output fluix_essence to fluix_crafter
+end
+
+every 20 ticks do
+    input *infused_gem_essence from essence_controller
+    output *infused_gem_essence to infused_gem_crafter
+end
+
+every 20 ticks do
+    input gaia_spirit_essence from essence_controller
+    output gaia_spirit_essence to gaia_spirit_crafter
+end
+
+every 20 ticks do
+    input hop_graphite_essence from essence_controller
+    output hop_graphite_essence to hop_graphite_crafter
+end
+
+every 20 ticks do
+    input iridium_essence from essence_controller
+    output iridium_essence to iridium_crafter
+end
+
+every 20 ticks do
+    input peridot_essence from essence_controller
+    output peridot_essence to peridot_crafter
+end
+
+every 20 ticks do
+    input platinum_essence from essence_controller
+    output platinum_essence to platinum_crafter
+end
+
+every 20 ticks do
+    input pulsating_alloy_essence from essence_controller
+    output pulsating_alloy_essence to pulsating_alloy_crafter
+end
+
+every 20 ticks do
+    input ruby_essence from essence_controller
+    output ruby_essence to ruby_crafter
+end
+
+every 20 ticks do
+    input sapphire_essence from essence_controller
+    output sapphire_essence to sapphire_crafter
+end
+
+every 20 ticks do
+    input squid_essence from essence_controller
+    output squid_essence to squid_crafter
+end
+
+every 20 ticks do
+    input terrasteel_essence from essence_controller
+    output terrasteel_essence to terrasteel_crafter
+end
+
+every 20 ticks do
+    input titanium_essence from essence_controller
+    output titanium_essence to titanium_crafter
+end
+
+every 20 ticks do
+    input tungsten_essence from essence_controller
+    output tungsten_essence to tungsten_crafter
+end
+
+every 20 ticks do
+    input unobtainium_essence from essence_controller
+    output unobtainium_essence to unobtainium_crafter
+end
+
+every 20 ticks do
+    input vibranium_essence from essence_controller
+    output vibranium_essence to vibranium_crafter
+end
